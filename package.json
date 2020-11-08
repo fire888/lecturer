@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "buildFront": "webpack --config public_src/webpackConfig/webpackProd.js",
-    "startFront": "webpack-dev-server --open --config public_src/webpackConfig/webpackDev.js",
+    "buildFront": "webpack --config public_project/webpackConfig/webpackProd.js",
+    "startFront": "webpack-dev-server --open --config public_project/webpackConfig/webpackDev.js",
     "start": "node server.js"
   },
   "author": "",

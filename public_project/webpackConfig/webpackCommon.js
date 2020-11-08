@@ -4,7 +4,7 @@ const webpack = require('webpack')
 const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
-	entry: './public_src/index.js',
+	entry: './public_project/index.js',
 	module: {
 		rules: [
       { test: /\.txt$/, use: 'raw-loader' },
@@ -34,7 +34,7 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new HtmlWebpackPlugin({template: './public_src/templates/index.html'}),
+		new HtmlWebpackPlugin({template: './public_project/templates/index.html'}),
 		new webpack.ProvidePlugin({
 			THREE: 'three'
 		})
